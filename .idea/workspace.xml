@@ -16,6 +16,13 @@
       <phar pharPath="$PROJECT_DIR$/composer.phar" interpreterId="221845ec-b955-4a4a-8fc5-52abe1881d72" />
     </execution>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 5.5">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/psr/log" />
@@ -132,6 +139,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -184,7 +192,7 @@
       <workItem from="1605771469263" duration="5303000" />
       <workItem from="1605854933869" duration="10889000" />
       <workItem from="1605875983517" duration="3361000" />
-      <workItem from="1606115467812" duration="4024000" />
+      <workItem from="1606115467812" duration="4194000" />
     </task>
     <servers />
   </component>
