@@ -1,5 +1,8 @@
 <?php
 
+use http\Client\Request;
+use Illuminate\Cache\RateLimiter;
+use Illuminate\Cache\RateLimiting\Limit;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,6 +20,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
@@ -29,7 +33,7 @@ Route::get('/profile/{id}',[App\Http\Controllers\ProfileController::class, 'show
 Route::get('/profile/update/{id}',[App\Http\Controllers\ProfileController::class, 'update'])->name('update');
 
 
-Route::get('/employees', 'App\Http\Controllers\EmployeeController@index')->name('Employees.index');
+Route::get('/employees', 'App\Http\Controllers\EmployeeController@index')->name('Employees.index')->middleware('throttle:employees');
 Route::get('/employees/{id}', 'App\Http\Controllers\EmployeeController@show')->name('Employees.show');
 Route::get('/employees/{id}/edit','App\Http\Controllers\EmployeeController@edit')->name('Employees.edit');
 Route::get('/employees/{id}/delete','App\Http\Controllers\EmployeeController@destroy')->name('Employees.destroy');

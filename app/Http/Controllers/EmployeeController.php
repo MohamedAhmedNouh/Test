@@ -16,7 +16,7 @@ class EmployeeController extends Controller
     {
         //Show all employees from the database and return to view
         $employees = Employee::all();
-        return view('Employees.index',['employees'=>$employees]);
+        return view('Employees.index',['employees' => $employees]);
     }
     public function  show($id){
         $emp = Employee::find($id);
